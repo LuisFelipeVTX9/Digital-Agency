@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/*
+color 1 - #62ecc1
+color 2 - #222589
+color 3 - linear-gradient(#4d19a9, #222589)
+https://nicepage.com/html-templates/preview/agency-specializing-in-social-media-1790901?device=desktop
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+body{
+	width: 100vw;
+	height: 100%;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
+}
+.logo{
+	font-size: 25px;
+	color: gray;
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+}
+#menu > span{
+	display: block;
+	width: 28px; height: 3px;
+	background: #000;
+	cursor: pointer;
+}
+#menu > span:not(:last-child){
+	margin-bottom: 7px;
+}
+.principal{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imagens/fundo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title{
+	font-size: 4.5rem;
+	font-family: Raleway, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #62ecc1;
+	margin-bottom: 60px;
+}
+.subtitle{
+	font-size: 1.875rem;
+	color: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 78px;
+}
+.botoes{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.botoes .btn1{
+	border: 2px solid #62eec1;
+	background: #62eec1;
+	font-size: 18px;
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	padding: 15px 41px 15px 40px;
+	border-radius: 50px;
+	color: #222589;
+}
+.botoes .btn1:hover{
+	transition: .5s;
+	background: #fff;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.botoes .btn2{
+	border: 2px solid #62eec1;
+	background: none;
+	font-size: 18px;
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	padding: 15px 41px 15px 40px;
+	border-radius: 50px;
+	color: #62eec1;
+}
+.botoes .btn2:hover{
+	cursor: pointer;
+	transition: .5s;
+	background: #fff;
+	border: 2px solid #fff;
+	color: #222589;
+}
+.content{
+	width: 100vw;
+	display: flex;
+	margin-bottom: 45px;
+}
+.text{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 5px;
+	width: 50vw;
+	justify-content: center;
+	align-items: center;
+}
+.agencia{
+	padding: 10px 40px;
+	background: #222589;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 40px;
+	width: 260px;
+	cursor: pointer;
+}
+.agencia:hover{
+	background: #222589;
+	opacity: 90%;
+	transition: .5s;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+}
+.text h1{
+	font-size: 50px;
+	font-family: Montserrat, sans-serif;
+	color: #222589;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+.description{
+	font-size: 18px;
+	font-family: Lato, sans-serif;
+	color: gray;
+}
+.img{
+	width: 50vw;
+	display: flex;
+	padding: 0 0 0 50px;
+}
+.img img{
+	margin-top: 50px;
+	width: 500px;
+}
+.secao3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #62eec1;
+	height: 100vh;
+}
+.secao3 h1{
+	font-size: 3rem;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	color: #222589;
+	margin-bottom: 60px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 15px;
+	column-gap: 100px;
+}
+.left-box{
+	display: flex;
+	flex-direction: column;
+}
+.right-box{
+	display: flex;
+	flex-direction: column;
+}
+.dicas{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 5px;
+	margin-bottom: 40px;
+}
+.dicas img{
+	object-fit: cover;
+	width: 70px;
+	height: 70px;
+}
+.dicas span{
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	font-family: Lato, sans-serif;
+}
+.secao4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#4d19a9, #222589);
+	padding: 5px;
+	flex-direction: column;
+}
+.secao4 .mini-title{
+	letter-spacing: 4px;
+	font-size: 1.25rem;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	margin-top: 60px;
+}
+.secao4 h1{
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.box-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 100px;
+}
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 25px;
+	background: #fff;
+	padding: 20px 30px;
+}
+.cards img{
+	width: auto; height: 228px; object-fit: cover;
+}
+.cards h3{
+	margin-top: 25px;
+	font-size: 1.5rem;
+	color: #222589;
+	font-weight: 700;
+	font-family: Raleway,sans-serif;
+	margin-bottom: 20px;
+}
+.cards span{
+	font-size: 1rem;
+	margin-bottom: 20px;
+	color: #31335e;
+	font-family: Lato, sans-serif;
+	text-align: center;
+}
+.cards button{
+	margin: 25px auto 0;
+	padding: 6px 46px 7px 45px;
+	background: #222589;
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 1rem;
+	font-family: Lato, sans-serif;
+	margin-bottom: 20px;
+}
+.cards button:hover{
+	transition: .5s;
+	opacity: 90%;
+}
+.secao5{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.titulos{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	margin-top: 60px;
+}
+.titulos h1{
+	font-size: 3rem;
+	font-family: Raleway, sans-serif;
+	color: #222589;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.titulos .title-2{
+	font-size: 1.5rem;
+	font-family: Lato, sans-serif;
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: 300;
+}
+.servicos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.servicos .image-expand img{
+	height: 710px; width: 570px; object-fit: cover;
+	border-radius: 25px;
+}
+.servicos .service-grid{
+	display: flex;
+	padding: 10px;
+}
+.service-grid{
+	max-width: 45vw;
+	flex-wrap: wrap;
+	column-gap: 100px;
+}
+.grid{
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px;
+	margin-bottom: 30px;
+}
+.grid h3{
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	color: #111111;
+	font-family: Raleway, sans-serif;
+}
+.grid span{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.25rem;
+	font-family: Lato, sans-serif;
+	margin-bottom: 20px;
+}
+main{
+	margin-bottom: 100px;
+}
+.secao6{
+	background: cyan;
+	display: flex;
+	flex-direction: column;
+	background: #62ecc1;
+}
+.box2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+.box2 .image-box img{
+	width: 500px; height: 474px; object-fit: cover; border-radius: 25px;
+}
+.text-box{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px 10px;
+}
+.text-box h1{
+	color: #222589;
+	font-family: Raleway, sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.text-box p{
+	font-size: 1.125rem;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.text-box span{
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: Montserrat, sans-serif;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+.sections{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px;
+	gap: 15px;
+}
+.sectionP{
+	background: #222589;
+	border-radius: 25px;
+	padding: 10px 20px 40px 15px;
+	width: 25vw;
+	margin-bottom: 40px;
+}
+.sectionP h3{
+	display: flex;
+	align-items: center;
+	color: #fff;
+	gap: 10px;
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 20px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 4px;
+	margin-top: 20px;
+}
+.sectionP span{
+	font-family: Lato, sans-serif;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	background: #333333;
+}
+footer p{
+	font-size: 16px;
+	color: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+}
+
